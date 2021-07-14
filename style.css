@@ -1,0 +1,278 @@
+/* common styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins';
+}
+button{
+    border: none;
+    background-color: #E02C6D;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 24px;
+    cursor: pointer;
+}
+button i{
+    padding: 0 8px;
+}
+.item{
+    flex-basis: 50%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+section{
+    width: 75%;
+    margin: 68px auto;
+}
+h2{
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 60px;
+    margin-bottom: 8px;
+    transition: 0.5s;
+}
+section:hover h2{
+    /*text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);*/
+    transform: scale(1.2);
+}
+h3{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+
+/*----------- header style starts---------------*/
+
+header{
+    width: 100%;
+    height: auto;
+    background: #2D25A0;
+    color: white;
+
+
+}
+
+
+/* nav styles starts here */
+nav{
+    display: flex;
+    width: 80%;   
+    margin: 0 auto;
+    line-height: 24px;
+    font-size: 16px;
+    justify-content: space-between;
+}
+.navbarlink{
+    flex-grow: 1;
+    margin-top: 40px;
+}
+.navbarlink ul li{
+    display: inline-block;
+    margin: 0 36px;
+}
+.navbarlink ul li a{
+    color: white;
+    text-decoration: none;
+}
+.navbarlink ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+.navbarlink ul li:hover::after{
+    width: 100%;  
+}
+.logging-button{
+    height: 44px;
+    margin-top: 40px;
+}
+
+/* banner style starts */
+.banner{
+    display: flex;
+    width: 100%;
+
+    /*height: 78vh;*/
+    min-height: 78vh;
+}
+
+
+.banner-title{ 
+    display: inline-block;
+    width: 65%;
+    margin-left: 131px;
+    margin-top: 150px;
+}
+.banner-title h1{ 
+    font-size: 64px;
+
+    font-weight: 700;
+    line-height: 80px;
+    margin-bottom: 27px;
+}
+.watch-button{
+    width: 168px;
+    height: 44px;
+    border-radius: 70px;
+    transition: transform 0.5s;
+}
+.watch-button:hover{
+    transform: scale(1.2);
+}
+.banner-logo{
+    margin: auto;
+    transition: 1s;
+    max-height: 78%;
+    
+
+}
+.banner-logo img{
+    max-height: 78vh;
+    padding-top: 67px;
+    transition: transform 1s;
+}
+.banner:hover .banner-logo img{
+    transform: scaleX(-1);
+}
+
+
+
+
+
+/*-------------main style starts------------*/
+
+
+
+/* player list style */
+.player-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;*/
+}
+.player{ 
+    /*box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px 15px 33px 15px;
+    border-radius: 10px;*/
+box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+
+padding: 15px 15px 33px 15px;
+
+margin: 10px;
+/*grid-template-columns: auto auto auto;*/
+
+height: auto;
+max-width: 48vh;
+}
+.player .player-photo{
+    max-width: 100%;
+    height: 256px;
+    margin-bottom: 16px;
+    
+}
+.player p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+}
+
+/* Highlights style */
+.highlights{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlights .highlights-text{
+    width: 470px;
+}
+
+.highlights-text p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin-bottom: 24px;
+}
+.highlights .highlights-picture {
+    width: 100%;
+
+}
+.highlights .highlights-picture img{
+    width: 100%;
+
+    transition: 0.5s;
+}
+.highlights .highlights-picture img:hover{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+}
+/* final video styles */
+.final-video{
+    
+    text-align: center;
+   
+    transition: 0.5s;
+}
+.final-video:hover{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+}
+.final-video iframe{
+    width: 80%;
+    height: 60vh;
+    
+    margin-bottom: 40px;
+    width: 100%;
+    
+    transition: 0.5s;
+}
+
+
+/*-----------------------footer style starts----------------*/
+
+footer{
+    width: 100%;
+}
+.footer{
+
+    width: 33%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 63px;
+}
+.footer img{
+    width: 100%;
+     height: 110px;
+}
+.footer .footer-link{
+    margin: 20px;
+}
+.footer .footer-link span{
+    margin: 0 10px;
+    font-size: 2rem;
+    color: #969BAB;
+    cursor: pointer;
+}
+.footer p{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+
+
+
